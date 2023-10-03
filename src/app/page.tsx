@@ -1,8 +1,29 @@
-import Image from 'next/image'
-import styles from './page.module.css'
+"use client";
+import React from "react";
+import { MantineProvider } from "@mantine/core";
+import Header from "./components/header/Header";
+import { useRef } from "react";
 
 export default function Home() {
+  // const ref = useRef(null);
+
+  // const handleClick = () => {
+  //   ref.current?.scrollIntoView({ behavior: "smooth" });
+  // };
   return (
-    <h1>Homepage</h1>
-  )
+    <MantineProvider>
+      <Header />
+      <section>
+        {/* <button onClick={handleClick}>Scroll to element</button> */}
+
+        {/* <div style={{ height: "150rem" }} /> */}
+
+        {/* <div ref={ref} style={{ backgroundColor: "lightblue" }}>
+          Coding Beauty
+        </div> */}
+
+        {/* <div style={{ height: "150rem" }} /> */}
+      </section>
+    </MantineProvider>
+  );
 }
