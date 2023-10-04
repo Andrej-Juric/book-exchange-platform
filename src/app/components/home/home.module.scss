@@ -1,23 +1,8 @@
-/* * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-  }
-  
-  html,
-  body {
-    max-width: 100vw;
-    overflow-x: hidden;
-  }
-  
-  body {
-    background: #122223;
-    color: #da9c63;
-  } */
-
 .headerContainer {
   nav {
     position: relative;
+    display: flex;
+    justify-content: end;
   }
   .nav {
     display: flex;
@@ -58,9 +43,42 @@
     }
   }
 
-  // .header-container {
-  //   position: relative;
-  // }
+  .sectionAbout {
+    background-color: #122223;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: #eae5d2;
+    justify-content: center;
+    align-items: center;
+    font-size: 2vw;
+    letter-spacing: 2px;
+    transition: background-color 0.5s ease;
+    .aboutText {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  .sectionBooks {
+    background-color: #eae5d2;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: #da9c63;
+    justify-content: center;
+    align-items: center;
+    font-size: 2vw;
+    letter-spacing: 2px;
+    transition: background-color 0.5s ease;
+    .aboutText {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
   .page-container {
     position: fixed;
     top: 0;

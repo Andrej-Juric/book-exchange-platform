@@ -53,7 +53,7 @@ export default function BackgroundAnimation() {
             value: ["#da9c63", "#da9c63", "#122223"],
           },
           links: {
-            color: ["#faebd7", "#03dac6", "#ff0266"], // Dodajte više boja za crte
+            color: ["#faebd7", "#03dac6", "#ff0266"],
             distance: 150,
             enable: true,
             opacity: 0.1,
